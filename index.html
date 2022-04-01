@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
     <script src = "./js/script.js" defer></script>
     <link rel="stylesheet" href="./styles.css">
 
@@ -12,6 +15,7 @@
     <body>
         <main>
             <h1>Magic 8 Ball</h1>
+
             <form id = "myForm">
                     <!--Create a label for your input field telling your user to "Ask me anything!"-->
                 <label for="inputQuestion">Ask me anything!</label> <br><br>
@@ -21,12 +25,15 @@
                     <!--Create an "ask" button (this will run the function that outputs a random magic 8 ball image)-->
                 <div id="askMe"> 
                     <button class="button" id ="fortuneButton" type="button">ASK ME</button>
+                      <!--Create a div with an id of "answers" that you will insert the images into using js-->
+                    <div id = "answers">
+                        <img id = dynamicImage src = "./images/magic8ball_start.png"/>
+                    </div>
                 </div>  
             </form>
-                    <!--Create a div with an id of "answers" that you will insert the images into using js-->
-            <div id = "answers">
-                <img id = dynamicImage src = "./images/magic8ball_start.png"/>
-            </div>
+
+          
+          
         </main>
     </body>
 </html>
